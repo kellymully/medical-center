@@ -1,5 +1,3 @@
-import React from "react";
-
 const ContactForm = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
@@ -14,10 +12,7 @@ const ContactForm = () => {
 
         <form className="space-y-4">
           <div>
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-gray-700"
-            >
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
               Name
             </label>
             <input
@@ -29,10 +24,7 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
-            >
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
               Email
             </label>
             <input
@@ -44,10 +36,7 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label
-              htmlFor="phone"
-              className="block text-sm font-medium text-gray-700"
-            >
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
               Phone Number
             </label>
             <input
@@ -59,15 +48,12 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium text-gray-700"
-            >
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
               Message
             </label>
             <textarea
               id="message"
-              rows="4"
+              rows={4}  // ✅ fixed: must use curly braces, not quotes
               placeholder="Type your message here..."
               className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
             ></textarea>
